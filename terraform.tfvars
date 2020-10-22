@@ -1,0 +1,6 @@
+rg_name = "appservice-rg"
+location = "northeurope"
+client_secret = "paoh-h~eb5R682YxtQi5~y8Vgq5k38MAEo"
+subscription_id = "328e0db2-17e2-4496-a5f4-6f629cd54217"
+client_id = "dc076d60-1127-413b-9757-3ac3633aba3e"
+tenant_id = "0c8d2eda-360d-4df7-ba02-7ce121f34935"

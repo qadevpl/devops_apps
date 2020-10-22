@@ -1,0 +1,97 @@
+Enumerating objects: 88, done.
+Counting objects: 100% (88/88), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (50/50), done.
+Writing objects: 100% (88/88), 1.09 MiB | 1.28 MiB/s, done.
+Total 88 (delta 29), reused 88 (delta 29), pack-reused 0
+remote: Deploy Async
+remote: Updating branch 'master'.
+remote: Updating submodules.
+remote: Preparing deployment for commit id 'e8f23d3510'.
+remote: Repository path is /home/site/repository
+remote: Running oryx build...
+remote: .
+remote: Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+remote: You can report issues at https://github.com/Microsoft/Oryx/issues
+remote: 
+remote: Oryx Version: 0.2.20200805.1, Commit: e7c39ede513143e9d80fd553f106f04268d770d4, ReleaseTagName: 20200805.1
+remote: 
+remote: Build Operation ID: |NtA5Nwy+50g=.b114a178_
+remote: Repository Commit : e8f23d35102f150ac59bd5b6be4e0b7516899174
+remote: 
+remote: Detecting platforms...
+remote: Detected following platforms:
+remote:   dotnet: 3.1.6
+remote: 
+remote: Using intermediate directory '/tmp/8d876b903e05795'.
+remote: 
+remote: Copying files to the intermediate directory...
+remote: Done in 1 sec(s).
+remote:
+remote: Source directory     : /tmp/8d876b903e05795
+remote: Destination directory: /home/site/wwwroot
+remote:
+remote: 
+remote: Using .NET Core SDK Version: 3.1.302
+remote: 
+remote: Welcome to .NET Core 3.1!
+remote: ---------------------
+remote: SDK Version: 3.1.302
+remote:
+remote: Telemetry
+remote: ---------
+remote: The .NET Core tools collect usage data in order to help us improve your experience. The data is anonymous. It is collected by Microsoft and shared with the community. You can opt-out of telemetry by setting the DOTNET_CLI_TELEMETRY_OPTOUT environment variable to '1' or 'true' using your favorite shell.
+remote: 
+remote: Read more about .NET Core CLI Tools telemetry: https://aka.ms/dotnet-cli-telemetry
+remote:
+remote: ----------------
+remote: Explore documentation: https://aka.ms/dotnet-docs
+remote: Report issues and find source on GitHub: https://github.com/dotnet/core
+remote: Find out what's new: https://aka.ms/dotnet-whats-new
+remote: Learn about the installed HTTPS developer cert: https://aka.ms/aspnet-core-https
+remote: Use 'dotnet --help' to see available commands or visit: https://aka.ms/dotnet-cli-docs
+remote: Write your first app: https://aka.ms/first-net-core-app
+remote: --------------------------------------------------------------------------------------
+remote: ....
+remote:   Determining projects to restore...
+remote: ...................
+remote:   Restored /tmp/8d876b903e05795/backend/app/devops-app-api.csproj (in 22.34 sec).
+remote: .........................................................................
+remote: /tmp/8d876b903e05795/backend/app/devops-app-api.csproj : warning NU1701: Package 'Microsoft.AspNet.Cors 5.2.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.
+remote:   Restored /tmp/8d876b903e05795/backend/app/devops-app-api.csproj (in 1.3 min).
+remote: 
+remote: Publishing to directory /home/site/wwwroot...
+remote: 
+remote: Microsoft (R) Build Engine version 16.6.0+5ff7b0c9e for .NET Core
+remote: Copyright (C) Microsoft Corporation. All rights reserved.
+remote: 
+remote:   Determining projects to restore...
+remote: /tmp/8d876b903e05795/backend/app/devops-app-api.csproj : warning NU1701: Package 'Microsoft.AspNet.Cors 5.2.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.
+remote:   All projects are up-to-date for restore.
+remote: /tmp/8d876b903e05795/backend/app/devops-app-api.csproj : warning NU1701: Package 'Microsoft.AspNet.Cors 5.2.4' was restored using '.NETFramework,V=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.
+remote: .........
+remote:   devops-app-api -> /tmp/8d876b903e05795/backend/app/bin/Release/netcoreapp2.0/devops-app-api.dll
+remote:   It was not possible to find any compatible framework version
+remote:     - The following frameworks were found:
+remote:         3.1.6 at [/opt/dotnet/sdks/3.1.302/shared/Microsoft.NETCore.App]
+remote:
+remote:   You can resolve the problem by installing the specified framework and/or SDK.
+remote:
+remote:   The specified framework can be found at:
+remote:     - https://aka.ms/dotnet-core-applaunch?framework=Microsoft.NETCore.App&framework_version=2.0.0&arch=x64&rid=debian.9-x64
+remote: /var/nuget/microsoft.aspnetcore.mvc.razor.viewcompilation/2.0.2/build/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.targets(60,5):remote: Deployment Logs : 'https://backwebapp.scm.azurewebsites.net/newui/jsonviewer?view_url=/api/deployments/e8f23d35102f150ac59bd5b6be4e0b7516899174/log'
+To https://backwebapp.scm.azurewebsites.net/backwebapp.git
+ * [new branch]      master -> master
+PS C:\repo\devops-take-home\backend\app> terraform init
+Terraform initialized in an empty directory!
+
+The directory has no Terraform configuration files. You may begin working
+with Terraform immediately by creating Terraform configuration files.
+PS C:\repo\devops-take-home\backend\app> terraform plan -out plan.tfplan
+
+Error: No configuration files
+
+Plan requires configuration to be present. Planning without a configuration
+would mark everything for destruction, which is normally not what is desired.
+If you would like to destroy everything, run plan with the -destroy option.
+Otherwise, create a Terraform configuration file (.tf file) and try again.
